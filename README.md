@@ -22,6 +22,10 @@ Notebook Links
 There are different ways a strong lens can be modeled in **PyAutoLens**, we provide links describing the likelihood
 function of all approaches below:
 
+**Imaging Dataset + Parametric Source:**
+
+https://github.com/Jammy2211/autolens_workspace/blob/master/notebooks/imaging/log_likelihood_function/parametric.ipynb
+
 **Imaging Dataset + Pixelized Source Reconstruction:**
 
-https://github.com/Jammy2211/autolens_workspace/blob/master/notebooks/imaging/log_likelihood_function/inversion.ipynb
+https://github.com/Jammy2211/autolens_workspace/blob/master/notebooks/imaging/log_likelihood_function/pixelized.ipynb
