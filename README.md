@@ -14,7 +14,7 @@ The notebooks are not stored here (they are on the ``autolens_workspace``), howe
 here. We recommend authors link to this GitHub repository (as opposed to direct links to each) because the 
 URLs to notebooks on the ``autolens_workspace`` may change after papers are published. 
 
-By linking to this repository a permenant URL is provided.
+By linking to this repository a permanent URL is provided.
 
 Notebook Links
 ==============
@@ -24,8 +24,8 @@ function of all approaches below:
 
 **Imaging Dataset + Parametric Source:**
 
-https://github.com/Jammy2211/autolens_workspace/blob/master/notebooks/imaging/log_likelihood_function/parametric.ipynb
+https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/advanced/log_likelihood_function/parametric.ipynb
 
 **Imaging Dataset + Pixelized Source Reconstruction:**
 
-https://github.com/Jammy2211/autolens_workspace/blob/master/notebooks/imaging/log_likelihood_function/pixelized.ipynb
+https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/advanced/log_likelihood_function/pixelized.ipynb
