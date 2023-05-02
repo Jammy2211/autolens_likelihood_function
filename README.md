@@ -28,4 +28,4 @@ https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/adva
 
 **Imaging Dataset + Pixelized Source Reconstruction:**
 
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/advanced/log_likelihood_function/pixelized.ipynb
+https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/advanced/log_likelihood_function/pixelization.ipynb
