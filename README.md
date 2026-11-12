@@ -1,140 +1,81 @@
-PyAutoLens Likelihood Function
-==============================
+# PyAutoLens likelihood functions
 
-The ``autolens_workspace`` contains Jupyter notebooks describing the (log) likelihood functions used by **PyAutoLens**.
+Choose a notebook for your dataset and model. Each likelihood walkthrough follows the calculation from the observations to the quantity used to compare models, including the noise assumptions and any inversion or regularization terms.
 
-The notebooks provide a step-by-step guide of how **PyAutoLens** fits strong lens data, with the aim to make
-the analysis clear to readers without background experience in strong lens modeling and make the modeling less 
-of a "black box".
+Read the notebook on GitHub or run it from the matching workspace. The examples use their own datasets and settings; report the choices used in your analysis rather than assuming every likelihood is identical.
 
-We recommend that when writing a paper using **PyAutoLens** the author links to this GitHub repository when describing 
-their likelihood function. 
+## Cluster
 
-The notebooks are not stored here (they are on the ``autolens_workspace``), however URLs to every notebook are provided 
-here. We recommend authors link to this GitHub repository (as opposed to direct links to each) because the 
-URLs to notebooks on the ``autolens_workspace`` may change after papers are published. 
+| Example | Guide |
+|---|---|
+| Base likelihood | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/cluster/likelihood_function.ipynb) |
 
-By linking to this repository a permanent URL is provided.
+## Group
 
-Notebook Links
-==============
+| Example | Guide |
+|---|---|
+| double source plane lens | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/group/features/advanced/double_source_plane_lens/likelihood_function.ipynb) |
+| mass stellar dark | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/group/features/advanced/mass_stellar_dark/likelihood_function.ipynb) |
+| linear light profiles | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/group/features/linear_light_profiles/likelihood_function.ipynb) |
+| multi gaussian expansion | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/group/features/multi_gaussian_expansion/likelihood_function.ipynb) |
+| pixelization/delaunay | [Related worked example](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/group/features/pixelization/delaunay.ipynb) |
+| pixelization | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/group/features/pixelization/likelihood_function.ipynb) |
+| scaling relation | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/group/features/scaling_relation/likelihood_function.ipynb) |
+| Base likelihood | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/group/likelihood_function.ipynb) |
 
-There are many ways a strong lens can be modeled in **PyAutoLens**. The links below describe the likelihood
-function of every approach, grouped by dataset type. Each dataset type has a base likelihood function guide,
-followed by guides describing the likelihood function of specific features (e.g. a pixelized source
-reconstruction, a multi Gaussian expansion).
+## Imaging
 
-Imaging
--------
+| Example | Guide |
+|---|---|
+| double source plane lens | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/imaging/features/advanced/double_source_plane_lens/likelihood_function.ipynb) |
+| mass stellar dark | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/imaging/features/advanced/mass_stellar_dark/likelihood_function.ipynb) |
+| potential correction | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/imaging/features/advanced/potential_correction/likelihood_function.ipynb) |
+| linear light profiles | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/imaging/features/linear_light_profiles/likelihood_function.ipynb) |
+| multi gaussian expansion | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/imaging/features/multi_gaussian_expansion/likelihood_function.ipynb) |
+| pixelization/delaunay | [Related worked example](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/imaging/features/pixelization/delaunay.ipynb) |
+| pixelization | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/imaging/features/pixelization/likelihood_function.ipynb) |
+| scaling relation | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/imaging/features/scaling_relation/likelihood_function.ipynb) |
+| Base likelihood | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/imaging/likelihood_function.ipynb) |
 
-**Base (Parametric Source):**
+## Interferometer
 
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/likelihood_function.ipynb
+| Example | Guide |
+|---|---|
+| potential correction | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/interferometer/features/advanced/potential_correction/likelihood_function.ipynb) |
+| datacube/delaunay | [Related worked example](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/interferometer/features/datacube/delaunay.ipynb) |
+| datacube | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/interferometer/features/datacube/likelihood_function.ipynb) |
+| linear light profiles | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/interferometer/features/linear_light_profiles/likelihood_function.ipynb) |
+| multi gaussian expansion | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/interferometer/features/multi_gaussian_expansion/likelihood_function.ipynb) |
+| pixelization/delaunay | [Related worked example](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/interferometer/features/pixelization/delaunay.ipynb) |
+| pixelization | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/interferometer/features/pixelization/likelihood_function.ipynb) |
+| scaling relation | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/interferometer/features/scaling_relation/likelihood_function.ipynb) |
+| Base likelihood | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/interferometer/likelihood_function.ipynb) |
 
-**Pixelized Source Reconstruction (Rectangular Mesh):**
+## Multi galaxy
 
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/features/pixelization/likelihood_function.ipynb
+| Example | Guide |
+|---|---|
+| double source plane lens | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/multi_galaxy/features/advanced/double_source_plane_lens/likelihood_function.ipynb) |
+| mass stellar dark | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/multi_galaxy/features/advanced/mass_stellar_dark/likelihood_function.ipynb) |
+| linear light profiles | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/multi_galaxy/features/linear_light_profiles/likelihood_function.ipynb) |
+| multi gaussian expansion | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/multi_galaxy/features/multi_gaussian_expansion/likelihood_function.ipynb) |
+| pixelization | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/multi_galaxy/features/pixelization/likelihood_function.ipynb) |
+| scaling relation | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/multi_galaxy/features/scaling_relation/likelihood_function.ipynb) |
+| Base likelihood | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/multi_galaxy/likelihood_function.ipynb) |
 
-**Pixelized Source Reconstruction (Delaunay Mesh):**
+## Point source
 
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/features/pixelization/delaunay.ipynb
+| Example | Guide |
+|---|---|
+| scaling relation | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/point_source/features/scaling_relation/likelihood_function.ipynb) |
+| fit | [Related worked example](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/point_source/fit.ipynb) |
 
-**Linear Light Profiles:**
+## Weak
 
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/features/linear_light_profiles/likelihood_function.ipynb
+| Example | Guide |
+|---|---|
+| Base likelihood | [Likelihood walkthrough](https://github.com/PyAutoLabs/autolens_workspace/blob/main/notebooks/weak/likelihood_function.ipynb) |
 
-**Multi Gaussian Expansion:**
+## Citing your analysis
 
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/features/multi_gaussian_expansion/likelihood_function.ipynb
-
-**Scaling Relation:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/features/scaling_relation/likelihood_function.ipynb
-
-**Double Einstein Ring:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/features/advanced/double_einstein_ring/likelihood_function.ipynb
-
-**Stellar and Dark Mass:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/imaging/features/advanced/mass_stellar_dark/likelihood_function.ipynb
-
-Interferometer
---------------
-
-**Base (Parametric Source):**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/interferometer/likelihood_function.ipynb
-
-**Pixelized Source Reconstruction (Rectangular Mesh):**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/interferometer/features/pixelization/likelihood_function.ipynb
-
-**Pixelized Source Reconstruction (Delaunay Mesh):**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/interferometer/features/pixelization/delaunay.ipynb
-
-**Linear Light Profiles:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/interferometer/features/linear_light_profiles/likelihood_function.ipynb
-
-**Multi Gaussian Expansion:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/interferometer/features/multi_gaussian_expansion/likelihood_function.ipynb
-
-**Datacube (Parametric Source):**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/interferometer/features/datacube/likelihood_function.ipynb
-
-**Datacube (Delaunay Mesh):**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/interferometer/features/datacube/delaunay.ipynb
-
-Group
------
-
-**Base:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/group/likelihood_function.ipynb
-
-**Pixelized Source Reconstruction (Rectangular Mesh):**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/group/features/pixelization/likelihood_function.ipynb
-
-**Pixelized Source Reconstruction (Delaunay Mesh):**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/group/features/pixelization/delaunay.ipynb
-
-**Linear Light Profiles:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/group/features/linear_light_profiles/likelihood_function.ipynb
-
-**Multi Gaussian Expansion:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/group/features/multi_gaussian_expansion/likelihood_function.ipynb
-
-**Scaling Relation:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/group/features/scaling_relation/likelihood_function.ipynb
-
-**Double Einstein Ring:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/group/features/advanced/double_einstein_ring/likelihood_function.ipynb
-
-**Stellar and Dark Mass:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/group/features/advanced/mass_stellar_dark/likelihood_function.ipynb
-
-Cluster
--------
-
-**Point Source:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/cluster/likelihood_function.ipynb
-
-Weak Lensing
-------------
-
-**Base:**
-
-https://github.com/Jammy2211/autolens_workspace/blob/main/notebooks/weak/likelihood_function.ipynb
+Give the software version, model, data and noise assumptions used in your fit. Link to the relevant explanation and cite the methods you used. For a reproducible code reference, link to the notebook at the release tag or commit used for your analysis; the `main` links above follow the current examples.
